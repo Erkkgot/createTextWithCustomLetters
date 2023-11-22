@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+* {
+    font-family: 'Titillium Web';
+}
+body {
+    background-color: #86877B;
+}
+#pens {
+    display: grid;
+}
+#pen, #pen2 {
+    grid-row: 1;
+    grid-column: 1;
+    transition: 0.5s ease-in;
+}
+#top {
+    display: inline-flex;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    gap: 15px;
+    transition: 0.5s ease-in;
+    color: #C3E05A;
+    cursor: default;
+}
+#top:hover {
+    color: #E88456;
+    transition: 0.5s ease-in;
+}
+#top:hover #pen {
+    opacity: 0;
+    transition: 0.5s ease-in;
+}
+div h1 {
+    margin: 0;
+}
+#inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: inline-flex;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+#results {
+    cursor: default;
+}
+#inputs input {
+    height: 50px;
+    width: 400px;
+    outline: none;
+    border: 2px solid #C3E05A;
+    border-radius: 30px;
+    background-color: #86877B;
+    text-align: center;
+    transition: 0.5s ease-in;
+}
+#inputs input::placeholder {
+    color: #E88456;
+}
+#inputs input:focus {
+    border-color: #E88456;
+    transition: 0.5s ease-in;
+}
+#copy {
+    position: absolute;
+    bottom: 15px;
+    left: 105%;
+    cursor: pointer;
+}
